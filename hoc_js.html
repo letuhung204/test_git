@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" value="click2" id="test3" name="button" class="class-button2">
+        <div>
+            <p>nhập tên user:</p>
+            <input type="button" value="click" id="test" name="button" class="class-button">
+             <!-- thẻ muon lấy ra -->
+            <input type="button" value="click1" id="test2" name="button" class="class-button2"> 
+            <input type="button" value="click1" id="test2" name="button" class="class-button2"> 
+            
+            <p name="button"> test</p>
+        </div>
+
+        <script>
+
+
+            // function showhello(){
+            //     //code logic hành động sẽ xử lý khi người dùng click button
+            //     alert("xin chào ! codefresher");
+            // }
+
+            //1. lấy thẻ element thông qua Id
+            var buttonById = document.getElementById("test2");
+            
+            console.log(buttonById);
+            console.log(buttonById.value);
+            console.log(buttonById.type);
+
+            //2. lay the element thông qua name
+            console.log("get element by name");
+            var buttonByName = document.getElementsByName("button");
+
+            for(var i=0;i<buttonByName.length;i++){
+                console.log(buttonByName[i]);
+            }
+            //3. lay the element thông qua tag name
+            console.log("Lấy Theo tag name");
+            var buttonByTagName = document.getElementsByTagName("input");
+             
+            for(var i=0;i<buttonByTagName.length;i++){
+                console.log(buttonByTagName[i]);
+            }
+
+            //4. laasy ther element thong qua classname
+            console.log("Lấy Theo Class Name");
+
+            var buttonByClassName = document.getElementsByClassName("class-button");
+
+            console.log(buttonByClassName[0]);
+            console.log(buttonByClassName[0].value);
+            console.log(buttonByClassName[0].name);
+            console.log(buttonByClassName[0].id);
+            console.log(buttonByClassName[0].class);
+
+            //4 other selector
+            console.log("Lấy element thông qua selector css")
+
+            var buttonBySelector = document.querySelectorAll("div input.class-button2");
+            console.log(buttonBySelector[0]);
+            console.log(buttonBySelector[1]);
+
+        </script>
+</body>
+</html>

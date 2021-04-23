@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- <input type="text" id="input" onkeydown="showHello()">
+    <div id="result"></div> -->
+        
+    <!-- <div style="width:100px; height: 100px; background-color: brown;" onmousemove="showHello()"></div> -->
+
+   <!-- <ul>
+       <li value="" class="test">test1</li>
+       <li value="" class="test3">test3</li>
+       <li value="" class="test">test2</li>
+       <li value="" class="test">test4</li>
+   </ul> -->
+
+   <form action="" method="post">
+       username : <input type="text" id="username"><br>
+       password : <input type="text" id="password"><br>
+       Re-pass : <input type="text" id="Re-pass"><br>
+       <input type="button" value="submit" onclick="validate()">
+   </form>
+    
+</body>
+<script>
+
+    function validate(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var repass = document.getElementById("Re-pass").value;
+
+        if(username == ""){
+            alert("Hãy nhập username !");
+            return false;
+        }
+        if(password ==""){
+            alert("Hãy nhập password !");
+            return false;
+        }
+        if(repass != password){
+            alert("Hãy nhập giong password!");
+            return false;
+        }
+        return true;
+    }
+
+    window.onload = function(){
+        alert(2);
+    }
+
+    alert(1);
+
+    alert(3);
+
+
+</script>
+</html>

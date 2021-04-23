@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="test" value="click me">
+    <div id="ketqua"></div>
+</body>
+
+
+<script>
+    var input = document.getElementById("test");
+
+    function infor(){
+        alert(1);
+    }
+
+    //add event cho element
+    input.addEventListener("click", infor)
+
+    //remove event cho element
+    input.removeEventListener("click", infor)
+
+
+</script>
+</html>
